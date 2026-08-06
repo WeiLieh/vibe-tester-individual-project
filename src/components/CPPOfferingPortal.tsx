@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { FloatingShareBar } from './FloatingShareBar';
 import { SubPageType } from '../types';
 import { ChevronRight } from 'lucide-react';
+import englishGraphic from '../assets/images/cpp_english_card_1785989736893.jpg';
+import mandarinGraphic from '../assets/images/cpp_mandarin_card_1785989749380.jpg';
 
 interface CPPOfferingPortalProps {
   onStartElearning: (lang: 'en' | 'zh') => void;
@@ -16,8 +18,8 @@ export const CPPOfferingPortal: React.FC<CPPOfferingPortalProps> = ({
   subPage,
   onSelectSubPage,
 }) => {
-  const englishCardImg = "https://lh3.googleusercontent.com/aida-public/AB6AXuBqCPLe3aehVLDyLDU6V_4PQHiLUvAOj-y8LO1ow0Iur-Y5n-A8j_LqpQydEeYWGMraYiodvjKa9K_YpPAZmqKYT6lLXuunb2ltZCFI8nv3Bp8Dv0K9w1d0nKX5McNCF60DLDtHaRAVKphDNSVzB_xivcVXDH4IsiLiTBMEAzJZqXaaafGBtn67QwOSb5KN96iOfQ8X6F43mqePOP241TlY7YQ5SuLNN3nh2jgskh7fqUCdgTlzuphn";
-  const mandarinCardImg = "https://lh3.googleusercontent.com/aida-public/AB6AXuAUOzXDc6XTjeUZtc1aP_U00zfHddptoIBKxL-AyVQz2_hZKCL7sb1MbvWfOERZMNU36NfJe4EEH2dw81dX3fr0ex7sQzHUBDE5LBumUfNAWVXmCIQ43gItV68UDtxF3kCiMmm0rhR4t9aTrqhWC5Juw_aDvPYwj8QJ0zPxNs6UViwT2_w1gaKD0I36WW_QTbLAomxrsN941gZ-kXhaVyNA3bzbO22-yojRmqguKMUpJ7RPPLnbY5Nt";
+  const englishCardImg = englishGraphic;
+  const mandarinCardImg = mandarinGraphic;
 
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col md:flex-row relative">

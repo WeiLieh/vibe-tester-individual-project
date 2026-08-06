@@ -1,6 +1,8 @@
 import React from 'react';
 import { TabType } from '../types';
 
+import heroGraphic from '../assets/images/cpp_hero_counseling_1785989725607.jpg';
+
 interface HeroSectionProps {
   activeTab: TabType;
   onOpenEligibility: () => void;
@@ -10,7 +12,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   activeTab,
   onOpenEligibility,
 }) => {
-  const heroImageUrl = "https://lh3.googleusercontent.com/aida-public/AB6AXuArm8owpWOAxuxcWgIfCv4PcdeNz3paIC9cd4t8r_FNqgQsZju2mcs693amYgxM62QTkQDZu5mCgvzG4V-ZsYPCY-pe3GhxA01U_k6ChOeT4cM1q0rNWBkSnCO9jPAmEpedPhyBZEphiq5AJS-0DeJgRG-mYhi4dfpvw1_W61YTVACg0dKhg3chEKHauS8WqrkV8--JK-FXR178TCWpA9vQY1a3RkRLTMmpjDGKSncaxOFcuSsRx-Hz";
+  const heroImageUrl = heroGraphic;
 
   const getHeroContent = () => {
     switch (activeTab) {

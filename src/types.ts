@@ -47,3 +47,4 @@ export interface SearchResult {
   tab: TabType;
   subPage: SubPageType;
 }
+
