@@ -1,0 +1,6 @@
+{
+  "name": "Family Assist Portal",
+  "description": "Singapore Government portal for family support, marriage guidance, divorce proceedings, and the Mandatory Co-Parenting Programme (CPP).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
