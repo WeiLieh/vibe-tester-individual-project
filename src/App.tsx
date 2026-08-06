@@ -9,6 +9,7 @@ import { CPPOfferingPortal } from './components/CPPOfferingPortal';
 import { SectionContent } from './components/SectionContent';
 import { FloatingCounsellingTab } from './components/FloatingCounsellingTab';
 import { ChatbotPopup } from './components/ChatbotPopup';
+import { DisqusComments } from './components/DisqusComments';
 import { Footer } from './components/Footer';
 import { SearchModal } from './components/SearchModal';
 import { InteractiveAssistantModal } from './components/InteractiveAssistantModal';
@@ -131,6 +132,9 @@ export default function App() {
       <ChatbotPopup
         onOpenAssistant={() => setIsAssistantOpen(true)}
       />
+
+      {/* Disqus Comments Section */}
+      <DisqusComments activeTab={activeTab} subPage={subPage} />
 
       {/* 9. Portal Footer */}
       <Footer
