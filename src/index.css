@@ -2,28 +2,62 @@
 
 @layer base {
   body {
-    font-family: 'Inter', 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans', 'Inter', sans-serif;
+    background-color: #FBF9F8;
+    color: #1B1C1C;
   }
   h1, h2, h3, h4, .font-serif-title {
-    font-family: 'Noto Serif', 'Inter', serif;
+    font-family: 'Noto Serif', serif;
   }
 }
 
-/* Custom Professional Polish styling utilities */
+/* Official Family Assist (familyassist.msf.gov.sg) Palette Utilities */
 .bg-gov-navy {
-  background-color: #0F172A;
+  background-color: #2B2A59;
 }
 
 .text-gov-navy {
-  color: #0F172A;
+  color: #2B2A59;
 }
 
 .bg-gov-blue {
-  background-color: #1E293B;
+  background-color: #373367;
+}
+
+.text-gov-blue {
+  color: #373367;
+}
+
+.border-gov-blue {
+  border-color: #373367;
 }
 
 .bg-hero-tan {
-  background-color: #F8FAFC;
+  background-color: #F8F4EC;
+}
+
+.bg-fa-orange {
+  background-color: #FF7D00;
+}
+
+.hover\:bg-fa-orange-dark:hover {
+  background-color: #E66F00;
+}
+
+.text-fa-orange {
+  color: #FF7D00;
+}
+
+.border-fa-orange {
+  border-color: #FF7D00;
+}
+
+.bg-fa-cream {
+  background-color: #F8F4EC;
+}
+
+.bg-fa-sand {
+  background-color: #FBF9F8;
 }
 
 .writing-vertical-rl {

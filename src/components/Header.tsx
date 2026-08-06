@@ -67,8 +67,8 @@ export const Header: React.FC<HeaderProps> = ({
                   onClick={() => onSelectTab(item.id)}
                   className={`relative py-7 px-1 transition-colors duration-150 ${
                     isActive
-                      ? 'text-blue-700 font-extrabold border-b-3 border-blue-700'
-                      : 'hover:text-blue-700 text-[#2B2A59]'
+                      ? 'text-[#2B2A59] font-extrabold border-b-3 border-[#FF7D00]'
+                      : 'hover:text-[#FF7D00] text-[#2B2A59]'
                   }`}
                 >
                   {item.label}

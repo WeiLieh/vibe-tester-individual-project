@@ -38,7 +38,7 @@ export const SectionContent: React.FC<SectionContentProps> = ({
             </p>
             <button
               onClick={onOpenCounselling}
-              className="text-xs text-blue-700 font-bold hover:underline inline-flex items-center"
+              className="text-xs text-[#373367] font-bold hover:text-[#FF7D00] hover:underline inline-flex items-center"
             >
               Book FAM@FSC Counselling Session <ArrowRight className="w-3.5 h-3.5 ml-1" />
             </button>
@@ -55,7 +55,7 @@ export const SectionContent: React.FC<SectionContentProps> = ({
             </p>
             <button
               onClick={onStartCPP}
-              className="text-xs text-blue-700 font-bold hover:underline inline-flex items-center"
+              className="text-xs text-[#373367] font-bold hover:text-[#FF7D00] hover:underline inline-flex items-center"
             >
               Check CPP Pre-filing Requirements <ArrowRight className="w-3.5 h-3.5 ml-1" />
             </button>

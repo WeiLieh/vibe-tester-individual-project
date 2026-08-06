@@ -51,13 +51,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   const content = getHeroContent();
 
   return (
-    <section className="bg-slate-50 border-b border-slate-200 pb-10 pt-6">
+    <section className="bg-[#F8F4EC] border-b border-[#EAE3D2] pb-10 pt-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 md:pr-10">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-4 font-serif leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2B2A59] mb-4 font-serif leading-tight">
             {content.title}
           </h1>
-          <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl mb-6">
+          <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-xl mb-6">
             {content.subtitle}
           </p>
           
@@ -65,7 +65,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             <div className="flex flex-wrap gap-3">
               <button
                 onClick={onOpenEligibility}
-                className="bg-blue-600 text-white px-5 py-2.5 rounded-lg font-bold text-xs sm:text-sm hover:bg-blue-700 shadow-xs flex items-center transition"
+                className="bg-[#FF7D00] text-white px-6 py-3 rounded-full font-bold text-xs sm:text-sm hover:bg-[#e06e00] shadow-md flex items-center transition"
               >
                 <span>Check if CPP applies to you</span>
                 <span className="ml-2 font-mono">→</span>
@@ -75,7 +75,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         </div>
 
         <div className="md:w-1/2 flex justify-end mt-8 md:mt-0">
-          <div className="relative rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-white">
+          <div className="relative rounded-2xl overflow-hidden shadow-md border-4 border-white bg-white">
             <img
               src={heroImageUrl}
               alt="Illustration of counselling session for Mandatory Co-Parenting Programme"

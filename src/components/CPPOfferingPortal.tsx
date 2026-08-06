@@ -31,8 +31,8 @@ export const CPPOfferingPortal: React.FC<CPPOfferingPortalProps> = ({
             <li>
               <button
                 onClick={() => onSelectSubPage('cpp-english')}
-                className={`text-left hover:text-blue-700 transition ${
-                  subPage === 'cpp-english' ? 'text-blue-800 font-bold underline' : ''
+                className={`text-left transition ${
+                  subPage === 'cpp-english' ? 'text-[#373367] font-extrabold underline' : 'hover:text-[#373367]'
                 }`}
               >
                 Mandatory Co-Parenting Programme (CPP) in English
@@ -41,8 +41,8 @@ export const CPPOfferingPortal: React.FC<CPPOfferingPortalProps> = ({
             <li>
               <button
                 onClick={() => onSelectSubPage('cpp-mandarin')}
-                className={`text-left hover:text-blue-700 transition ${
-                  subPage === 'cpp-mandarin' ? 'text-blue-800 font-bold underline' : ''
+                className={`text-left transition ${
+                  subPage === 'cpp-mandarin' ? 'text-[#373367] font-extrabold underline' : 'hover:text-[#373367]'
                 }`}
               >
                 强制性共同育儿辅导计划 (CPP)
@@ -84,7 +84,7 @@ export const CPPOfferingPortal: React.FC<CPPOfferingPortalProps> = ({
             </h4>
             <button
               onClick={() => onStartElearning('en')}
-              className="text-blue-600 underline font-semibold hover:text-blue-800 transition text-sm cursor-pointer"
+              className="text-[#373367] underline font-bold hover:text-[#FF7D00] transition text-sm cursor-pointer"
             >
               Click here to complete the CPP in English.
             </button>
@@ -105,7 +105,7 @@ export const CPPOfferingPortal: React.FC<CPPOfferingPortalProps> = ({
             </h4>
             <button
               onClick={() => onStartElearning('zh')}
-              className="text-blue-600 underline font-semibold hover:text-blue-800 transition text-sm cursor-pointer"
+              className="text-[#373367] underline font-bold hover:text-[#FF7D00] transition text-sm cursor-pointer"
             >
               请点击这里以完成强制性共同育儿辅导计划 （CPP）。
             </button>
