@@ -10,6 +10,7 @@ import { SectionContent } from './components/SectionContent';
 import { FloatingCounsellingTab } from './components/FloatingCounsellingTab';
 import { ChatbotPopup } from './components/ChatbotPopup';
 import { DisqusComments } from './components/DisqusComments';
+import { ErrorBoundary } from './components/ErrorBoundary';
 import { Footer } from './components/Footer';
 import { SearchModal } from './components/SearchModal';
 import { InteractiveAssistantModal } from './components/InteractiveAssistantModal';
@@ -134,7 +135,9 @@ export default function App() {
       />
 
       {/* Disqus Comments Section */}
-      <DisqusComments activeTab={activeTab} subPage={subPage} />
+      <ErrorBoundary>
+        <DisqusComments activeTab={activeTab} subPage={subPage} />
+      </ErrorBoundary>
 
       {/* 9. Portal Footer */}
       <Footer
