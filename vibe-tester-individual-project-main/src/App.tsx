@@ -72,7 +72,7 @@ export default function App() {
   };
 
   return (
-    <div className={`min-h-screen flex flex-col bg-slate-50 text-slate-900 ${getTextScaleClass()}`}>
+    <div className={`min-h-screen flex flex-col bg-white text-slate-900 ${getTextScaleClass()}`}>
       {/* 1. Official Government Banner */}
       <GovBanner
         currentLang={lang}
