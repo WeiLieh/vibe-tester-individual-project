@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm -v)",
+      "Bash(bun -v)",
+      "Bash(npm install *)",
+      "Bash(mkdir -p \"C:\\\\Users\\\\user\\\\Desktop\\\\vibe-tester-individual-project-main\\\\.claude\")"
+    ]
+  }
+}

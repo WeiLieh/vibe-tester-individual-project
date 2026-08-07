@@ -1,0 +1,92 @@
+import React from 'react';
+import { TabType } from '../types';
+
+import heroGraphic from '../assets/images/cpp_hero_counseling_1785989725607.jpg';
+
+interface HeroSectionProps {
+  activeTab: TabType;
+  onOpenEligibility: () => void;
+}
+
+export const HeroSection: React.FC<HeroSectionProps> = ({
+  activeTab,
+  onOpenEligibility,
+}) => {
+  const heroImageUrl = heroGraphic;
+
+  const getHeroContent = () => {
+    switch (activeTab) {
+      case 'making-decisions':
+        return {
+          title: 'Making Decisions About Your Marriage',
+          subtitle: 'Reflecting on your relationship, seeking marriage counselling, or finding safety during times of crisis. We are here to support your family every step of the way.'
+        };
+      case 'strengthening-marriage':
+        return {
+          title: 'Strengthening Your Marriage',
+          subtitle: 'Discover workshops, pre-marital counselling, and enrichment programs designed to build resilience and deepen commitment in your marriage.'
+        };
+      case 'impact-divorce':
+        return {
+          title: 'Understanding the Impact of Divorce',
+          subtitle: 'Learn how divorce affects children, housing eligibility, maintenance, and long-term financial stability, with legal and emotional guidance.'
+        };
+      case 'support-services':
+        return {
+          title: 'Support Services & Counselling Directory',
+          subtitle: 'Access professional counsellors, FAM@FSC community centres, and 24-hour crisis helplines across Singapore.'
+        };
+      case 'about':
+        return {
+          title: 'About Family Assist',
+          subtitle: 'An initiative by the Ministry of Social and Family Development (MSF) and Family Justice Courts to support families through life transitions.'
+        };
+      case 'proceeding-divorce':
+      default:
+        return {
+          title: 'Mandatory Co-Parenting Programme (CPP)',
+          subtitle: 'Understand your marital situation and the impact of divorce on you and your children. You will also receive personalised support from a counsellor during the CPP consultation.'
+        };
+    }
+  };
+
+  const content = getHeroContent();
+
+  return (
+    <section className="bg-[#F8F4EC] border-b border-[#EAE3D2] pb-10 pt-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
+        <div className="md:w-1/2 md:pr-10">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2B2A59] mb-4 font-serif leading-tight">
+            {content.title}
+          </h1>
+          <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-xl mb-6">
+            {content.subtitle}
+          </p>
+          
+          {activeTab === 'proceeding-divorce' && (
+            <div className="flex flex-wrap gap-3">
+              <button
+                onClick={onOpenEligibility}
+                className="bg-[#FF7D00] text-white px-6 py-3 rounded-full font-bold text-xs sm:text-sm hover:bg-[#e06e00] shadow-md flex items-center transition"
+              >
+                <span>Check if CPP applies to you</span>
+                <span className="ml-2 font-mono">→</span>
+              </button>
+            </div>
+          )}
+        </div>
+
+        <div className="md:w-1/2 flex justify-end mt-8 md:mt-0">
+          <div className="relative rounded-2xl overflow-hidden shadow-md border-4 border-white bg-white">
+            <img
+              src={heroImageUrl}
+              alt="Illustration of counselling session for Mandatory Co-Parenting Programme"
+              className="max-w-full h-auto max-h-80 object-cover"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
